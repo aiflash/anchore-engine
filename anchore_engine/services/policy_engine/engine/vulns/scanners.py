@@ -307,3 +307,12 @@ class GrypeScanner:
             affected_package_version=affected_package_version,
             namespace=namespace,
         )
+        releated_vulenrabilities = {}
+
+        nvd_data = GrypeWrapperSingleton.get_instance().query_vulnerabilities(
+            vuln_id=related_vulenrabilities,
+            namespace=['nd'],
+        )
+        {raw_result.GrypeVulnerabilityMeatadata.id for }
+
+

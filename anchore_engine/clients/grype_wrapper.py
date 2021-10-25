@@ -805,6 +805,10 @@ class GrypeWrapperSingleton(object):
             # Return the output as json
             return json.loads(stdout)
 
+    def query_vulnerability_metadata(self, vuln_ids, namespaces):
+
+
+
     def query_vulnerabilities(
         self,
         vuln_id=None,
