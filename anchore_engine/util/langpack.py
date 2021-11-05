@@ -21,7 +21,7 @@ def language_compare(a, op, b, language="python"):
     if language in ["java", "maven"]:
         aoptions = [MavenVersion(a)]
         boptions = [MavenVersion(b)]
-    elif language in ["js", "npm", "ruby", "gem", "nuget"]:
+    elif language in ["js", "npm", "ruby", "gem", "nuget", "go", "binary"]:
         try:
             aoptions = [semantic_version.Version.coerce(a)]
             boptions = [semantic_version.Version.coerce(b)]

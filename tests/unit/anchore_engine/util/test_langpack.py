@@ -4,8 +4,19 @@ from anchore_engine.util.langpack import compare_versions
 
 enable_training = False
 
-all_languages = ["java", "maven", "js", "npm", "ruby", "gem", "nuget", "python"]
-generic_languages = ["js", "npm", "ruby", "gem", "nuget"]
+all_languages = [
+    "java",
+    "maven",
+    "js",
+    "npm",
+    "ruby",
+    "gem",
+    "nuget",
+    "python",
+    "go",
+    "binary",
+]
+generic_languages = ["js", "npm", "ruby", "gem", "nuget", "go"]
 
 lesser_versions = [
     "0.0",
